@@ -1,3 +1,5 @@
-import data from './7.json';
+import imageUrl from './src/assets/js_logo.svg';
 
-console.log(data);
+console.log(imageUrl);
+
+document.getElementById('image').src = imageUrl;
