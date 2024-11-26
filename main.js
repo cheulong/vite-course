@@ -1,4 +1,6 @@
-const modules = import.meta.glob("/src/10/*.js", { eager: true });
+const modules = import.meta.glob("/src/10/*.js", { import: 'name', eager: true });
+// const modules = import.meta.glob("/src/10/*.js", { as: 'raw', eager: true });
+// const modules = import.meta.glob("/src/10/*.js", { as: 'url', eager: true });
 // const modules = import.meta.glob("/src/10/*.js");
 console.log(modules);
 
