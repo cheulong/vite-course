@@ -1,1 +1,3 @@
-import './src/assets/06.scss';
+import data from './7.json';
+
+console.log(data);
