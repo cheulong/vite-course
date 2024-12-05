@@ -14,17 +14,18 @@ export default {
   },
   plugins: [
     Inspect(),
-    checker({
-      typescript: true,
-      eslint: {
-        lintCommand: 'eslint "./**/*.{ts,tsx}"',
-      },
-    }),
+    // checker({
+    //   typescript: true,
+    //   eslint: {
+    //     lintCommand: 'eslint "./**/*.{ts,tsx}"',
+    //   },
+    // }),
     tailwindcss(),
   ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
-  }
+  },
+  envPrefix: 'APP_',
 }
