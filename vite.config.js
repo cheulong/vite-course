@@ -2,6 +2,7 @@
 import Inspect from 'vite-plugin-inspect'
 import tailwindcss from '@tailwindcss/vite';
 import checker from 'vite-plugin-checker';
+import path from 'path';
 
 export default {
   css: {
@@ -21,4 +22,9 @@ export default {
     }),
     tailwindcss(),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  }
 }
